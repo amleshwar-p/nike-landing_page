@@ -1,13 +1,128 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Kanit:wght@200;500;700&family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Inclusive Sans', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+
+}
+
+.nav {
+  display: flex;
+  height: 8vh;
+  justify-content: space-around;
+  padding: 0 5px;
+  align-items: center;
+}
+
+.nike-logo {
+  height: 50px;
+}
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 25px;
+  font-weight: 700;
+}
+
+.login-btn {
+  padding: 10px 25px;
+  background: #D01C28;
+  border-radius: 2px;
+  color: white;
+  font-size: 0.9rem;
+  border: none;
+}
+
+.land-page {
+  /* background-color: aquamarine; */
+  height: 92vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  margin: 0 40px;
+  background: #fff;
+  width: 75vw;
+  padding: 20px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+}
+
+.left-side h1 {
+  font-size: 6vw;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 5px;
+  line-height: 0.95;
+  margin: 0 0 20px 0;
+  width: 600px;
+
+}
+
+.left-side p {
+  margin: 20px 0;
+}
+
+.shoe-img {
+  height: 30vw;
+}
+
+.shop-buttons {
+  display: flex;
+  margin: 40px 0;
+}
+
+.shop-now {
+  cursor: pointer;
+  background: #ff0000;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+}
+
+.shop-now:hover {
+  background: #e22430;
+  /* transition: 0.5s; */
+  transform: scale(1.03);
+  color: #fff;
+}
+
+.category {
+  background-color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin-left: 60px;
+}
+
+.category:hover {
+
+  background: #f1f1f1;
+  /* transition: 0.5s; */
+  transform: scale(1.03);
+
+
 }
